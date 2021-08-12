@@ -60,7 +60,10 @@ footer {
     box-shadow: var(--shadow);
 }
 .btn-mth {
-
+    margin-left: 5px;
+    width: 40px;
+    height: 35px;
+    
 }
 .cal-box {
     display: inline-grid;
@@ -72,6 +75,9 @@ footer {
 }
 .result {
     border: solid 3px black;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
 }
 #num-one {
     display:;
@@ -81,7 +87,13 @@ h2 {
     font-size: 1.8rem;
     font-weight: bold;
 }
-
+.buttons-only {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(0, 0, 0);
+    height: 55px;
+}
 /* .gutter-right {
     margin-right: 20px;
 } */
@@ -109,6 +121,15 @@ footer {
     box-shadow: var(--shadow);
 }
   
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: underline;
+}
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);

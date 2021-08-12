@@ -20,11 +20,13 @@ const multBtn = document.getElementById('mult-num')
 addBtn.addEventListener('click', () => {
   const firstValue = numOne.value;
   const secondValue = numTwo.value;
-  
+
   const sum = add(firstValue, secondValue);
 
   resultEl.textContent = sum;
+  
 });
+
 subBtn.addEventListener('click', () => {
   const firstValue = numOne.value;
   const secondValue = numTwo.value;
