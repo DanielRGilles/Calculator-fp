@@ -8,16 +8,61 @@ import {
   } from '../utils.js'
 const test = QUnit.test;
 
-// test('time to test a function', add(4,5) => {
-//     //Arrange
-//     // Set up your arguments and expectations
-//     const expectedNum = '9' ;
-    
-//     //Act 
-//     // Call the function you're testing and set the result to a const
-//     const actualNum = '';
+test('time to test a function', function(expect) {
+  //Arrange
+  // Set up your arguments and expectations
+    const firstNumber = 3;
+    const secondNumber = 4;
+    const expectedResult = 7;
 
-//     //Expect
-//     // Make assertions about what is expected versus the actual result
-//     expectedNum.add(actual, expected);
-// });
+  //Act 
+  // Call the function you're testing and set the result to a const
+    const actualResult = add(firstNumber, secondNumber);
+
+  //Expectation
+  // Make expectations about what is expected and the actual result
+    expect.equal(actualResult, expectedResult);
+});
+test('time to test a function', function(expect) {
+  //Arrange
+  // Set up your arguments and expectations
+    const firstNumber = 3;
+    const secondNumber = 4;
+    const expectedResult = -1;
+
+  //Act 
+  // Call the function you're testing and set the result to a const
+    const actualResult = subtract(firstNumber, secondNumber);
+
+  //Expectation
+  // Make expectations about what is expected and the actual result
+    expect.equal(actualResult, expectedResult);
+});test('time to test a function', function(expect) {
+  //Arrange
+  // Set up your arguments and expectations
+    const firstNumber = 28;
+    const secondNumber = 4;
+    const expectedResult = 7;
+
+  //Act 
+  // Call the function you're testing and set the result to a const
+    const actualResult = divide(firstNumber, secondNumber);
+
+  //Expectation
+  // Make expectations about what is expected and the actual result
+    expect.equal(actualResult, expectedResult);
+});test('time to test a function', function(expect) {
+  //Arrange
+  // Set up your arguments and expectations
+    const firstNumber = 3;
+    const secondNumber = 4;
+    const expectedResult = 12;
+
+  //Act 
+  // Call the function you're testing and set the result to a const
+    const actualResult = multiply(firstNumber, secondNumber);
+
+  //Expectation
+  // Make expectations about what is expected and the actual result
+  expect.equal(actualResult, expectedResult);
+});
