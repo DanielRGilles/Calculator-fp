@@ -64,6 +64,9 @@ footer {
     height: 35px;
     
 }
+.btn-mth:hover {
+    cursor: pointer;
+}
 .cal-box {
     display: inline-grid;
     border: solid 5px black;
